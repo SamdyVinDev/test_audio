@@ -7,7 +7,9 @@
         "start": "next start -p 3000",
         "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons",
         "lint": "eslint \"**/*.{ts,tsx}\"",
-        "prettier": "prettier --write \"**/*.{ts,tsx}\""
+        "prettier": "prettier --write \"**/*.{ts,tsx}\"",
+        "prod:docker:build": "sudo docker build -t khmer_tts/frontend -f prod.Dockerfile .",
+        "prod:docker:up": "sudo docker-compose -f compose.yml up"
     },
     "dependencies": {
         "@emotion/react": "^11.7.1",

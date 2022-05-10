@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  backend:
+    container_name: khmer_tts_frontend
+    image: khmer_tts/frontend
+    build:
+      context: .
+      dockerfile: prod.Dockerfile
+    ports:
+      - 8801:3000
+    environment:
+      - BACKEND_API_URL=http://103.16.60.27:8800
