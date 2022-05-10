@@ -22,7 +22,7 @@ export default function index() {
     const fetchSound = async () => {
         setLoading(true);
         const soundRes = await axios.post(
-            `${process.env.BACKEND_API_URL}/api/v1/text-to-speech`,
+            "http://103.16.60.27:8800/api/v1/text-to-speech",
             {
                 data: {
                     text: text,
