@@ -1,0 +1,32 @@
+{
+    "theme_color": "#17C2C8",
+    "background_color": "#17C2C8",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "N N M",
+    "short_name": "N N M",
+    "description": "Next JS, Nest JS & Mysql Template",
+    "icons": [
+        {
+            "src": "/favicon/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
