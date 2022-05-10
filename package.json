@@ -10,7 +10,7 @@
         "lint": "eslint \"**/*.{ts,tsx}\"",
         "prettier": "prettier --write \"**/*.{ts,tsx}\"",
         "prod:docker:build": "sudo docker build -t khmer_tts/frontend -f prod.Dockerfile .",
-        "prod:docker:up": "sudo docker-compose -f compose.yml up",
+        "prod:docker:up": "sudo docker-compose -f compose.yml up -d",
         "docker:build": "docker build -t khmer_tts/frontend -f prod.Dockerfile .",
         "docker:up": "docker compose up"
     },
