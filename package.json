@@ -5,11 +5,14 @@
     "scripts": {
         "dev": "next dev -p 3000",
         "start": "next start -p 3000",
+        "build": "next build",
         "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons",
         "lint": "eslint \"**/*.{ts,tsx}\"",
         "prettier": "prettier --write \"**/*.{ts,tsx}\"",
         "prod:docker:build": "sudo docker build -t khmer_tts/frontend -f prod.Dockerfile .",
-        "prod:docker:up": "sudo docker-compose -f compose.yml up"
+        "prod:docker:up": "sudo docker-compose -f compose.yml up",
+        "docker:build": "docker build -t khmer_tts/frontend -f prod.Dockerfile .",
+        "docker:up": "docker compose up"
     },
     "dependencies": {
         "@emotion/react": "^11.7.1",
