@@ -11,7 +11,6 @@ import {
     Stack,
     Typography,
 } from "@mui/material";
-import { itemActions } from "@redux/slices/item";
 import { isString } from "lodash";
 import React from "react";
 import { useDispatch } from "react-redux";
@@ -63,10 +62,7 @@ const CustomCard = ({
 
     return (
         <Card sx={styles.Card}>
-            <CardActionArea
-                sx={styles.CardActionArea}
-                onClick={() => dispatch(itemActions.setSelectedItem(data))}
-            >
+            <CardActionArea sx={styles.CardActionArea} onClick={() => {}}>
                 <Box sx={styles.title}>{title}</Box>
                 {details && (
                     <Stack spacing={1} sx={{ width: "100%" }}>

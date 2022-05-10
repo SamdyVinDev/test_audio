@@ -118,6 +118,7 @@ export default function UploadAvatar({
             <RootStyle sx={sx}>
                 <DropZoneStyle
                     {...getRootProps()}
+                    // @ts-ignore
                     sx={
                         {
                             ...(isDragActive && { opacity: 0.72 }),

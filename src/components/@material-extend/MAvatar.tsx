@@ -6,7 +6,7 @@ import { Avatar, Palette, Theme, useTheme } from "@mui/material";
 
 const MAvatar = forwardRef(
     ({ color = "default", sx, children, ...other }: any, ref: any) => {
-        const theme: Theme = useTheme();
+        const theme: any = useTheme();
 
         if (color === "default") {
             return (

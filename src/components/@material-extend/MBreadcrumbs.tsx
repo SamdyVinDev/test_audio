@@ -25,6 +25,7 @@ function LinkItem(link: any) {
     const { href, name, icon } = link;
     return (
         <MLink
+            // @ts-ignore
             to={href as any}
             key={name}
             variant="body2"
@@ -62,6 +63,7 @@ export default function MBreadcrumbs({
     activeLast = false,
     ...other
 }: any) {
+    // @ts-ignore
     const currentLink = last(links as any).name;
 
     const listDefault = links.map((link: any) => (
